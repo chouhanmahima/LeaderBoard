@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScoreCard</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <h1>🏅LeaderBoard🏅</h1>
+        <form onsubmit="addPlayer(event)" id="container">
+            <div>
+                <label for="first-name"></label>
+                <input id="first-name" name="first-name" type="text" placeholder="First Name" required />
+            </div>
+
+            <div>
+                <label for="last-name"></label>
+                <input id="last-name" name="last-name" type="text" placeholder="Last Name" required />
+            </div>
+
+            <div>
+                <label for="country"></label>
+                <input id="country" name="country" type="text" placeholder="Country" required />
+            </div>
+
+            <div>
+                <label for="score"></label>
+                <input id="score" type="number" name="score" placeholder="Score" max="100" min="0" required />
+            </div>
+
+            <button type="submit" id="play">Add Player</button>
+        </form>
+        <ul id="player-list"></ul>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
